@@ -9,7 +9,7 @@ aws sts help
 
 
 <a id="markdown-aws-アカウント-id-を取得" name="aws-アカウント-id-を取得"></a>
-## AWS アカウント ID を取得
+### AWS アカウント ID を取得
 
 ```bash
 AWS_ACCOUNT_ID=$( \
