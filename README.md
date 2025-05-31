@@ -3,11 +3,11 @@ aws-cli-snipets
 
 AWS CLI でよく使うコマンド集
 
-- [acm](https://github.com/michimani/aws-cli-snippets/blob/main/acm.md)
-- [ec2](https://github.com/michimani/aws-cli-snippets/blob/main/ec2.md)
-- [ecs](https://github.com/michimani/aws-cli-snippets/blob/main/ecs.md)
-- [iam](https://github.com/michimani/aws-cli-snippets/blob/main/iam.md)
-- [lambda](https://github.com/michimani/aws-cli-snippets/blob/main/lambda.md)
-- [route53](https://github.com/michimani/aws-cli-snippets/blob/main/route53.md)
-- [s3api](https://github.com/michimani/aws-cli-snippets/blob/main/s3api.md)
-- [sts](https://github.com/michimani/aws-cli-snippets/blob/main/sts.md)
+- [ACM](https://github.com/michimani/aws-cli-snippets/blob/main/acm.md)
+- [EC2](https://github.com/michimani/aws-cli-snippets/blob/main/ec2.md)
+- [ECS](https://github.com/michimani/aws-cli-snippets/blob/main/ecs.md)
+- [IAM](https://github.com/michimani/aws-cli-snippets/blob/main/iam.md)
+- [Lambda](https://github.com/michimani/aws-cli-snippets/blob/main/lambda.md)
+- [Route 53](https://github.com/michimani/aws-cli-snippets/blob/main/route53.md)
+- [S3](https://github.com/michimani/aws-cli-snippets/blob/main/s3api.md)
+- [STS](https://github.com/michimani/aws-cli-snippets/blob/main/sts.md)
