@@ -1,15 +1,7 @@
-aws iam help
+aws iam
 ===
 
-<!-- TOC -->
-
-- [ポリシー名を指定して ARN を取得](#ポリシー名を指定して-arn-を取得)
-- [IAM ロールを作成 (for ECS タスクロール)](#iam-ロールを作成-for-ecs-タスクロール)
-
-<!-- /TOC -->
-
-<a id="markdown-ポリシー名を指定して-arn-を取得" name="ポリシー名を指定して-arn-を取得"></a>
-### ポリシー名を指定して ARN を取得
+## ポリシー名を指定して ARN を取得
 
 - 目的のポリシーに応じて `--path-prefix` を変える
 
@@ -23,8 +15,8 @@ POLICY_ARN=$(\
 && echo "${POLICY_ARN}"
 ```
 
-<a id="markdown-iam-ロールを作成-for-ecs-タスクロール" name="iam-ロールを作成-for-ecs-タスクロール"></a>
-### IAM ロールを作成 (for ECS タスクロール)
+
+## IAM ロールを作成 (for ECS タスクロール)
 
 1. AssumeRole ポリシードキュメントを作成 (JSON)
 2. ロールを作成
@@ -32,7 +24,7 @@ POLICY_ARN=$(\
 4. 作成したロールにポリシーをアタッチ
 
 
-#### 1. AssumeRole ポリシードキュメントを作成 (JSON)
+### 1. AssumeRole ポリシードキュメントを作成 (JSON)
 
 ```bash
 cat <<EOF > assume-role-policy-doc-for-task-role.json
@@ -52,7 +44,7 @@ cat <<EOF > assume-role-policy-doc-for-task-role.json
 EOF
 ```
 
-#### 2. ロールを作成
+### 2. ロールを作成
 
 ```bash
 TASK_ROLE_ARN=$( \
@@ -64,7 +56,7 @@ TASK_ROLE_ARN=$( \
 && echo "${TASK_ROLE_ARN}"
 ```
 
-#### 3. アタッチするポリシーを作成
+### 3. アタッチするポリシーを作成
 
 ```bash
 cat <<EOF > policy-for-task-role.json
@@ -113,7 +105,7 @@ cat <<EOF > policy-for-task-role.json
 EOF
 ```
 
-#### 4. 作成したロールにポリシーをアタッチ
+### 4. 作成したロールにポリシーをアタッチ
 
 ```bash
 TASK_ROLE_POLICY_ARN=$(\

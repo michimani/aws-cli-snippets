@@ -1,16 +1,7 @@
-aws route53 help
+aws route53
 ===
 
-<!-- TOC -->
-
-- [指定したドメインの HostedZoneID を取得](#指定したドメインの-hostedzoneid-を取得)
-- [RecordSet を作成](#recordset-を作成)
-- [RecordSet を削除](#recordset-を削除)
-
-<!-- /TOC -->
-
-<a id="markdown-指定したドメインの-hostedzoneid-を取得" name="指定したドメインの-hostedzoneid-を取得"></a>
-### 指定したドメインの HostedZoneID を取得
+## 指定したドメインの HostedZoneID を取得
 
 ```bash
 HOSTED_ZONE_ID=$( \
@@ -20,8 +11,7 @@ HOSTED_ZONE_ID=$( \
 && echo ${HOSTED_ZONE_ID}
 ```
 
-<a id="markdown-recordset-を作成" name="recordset-を作成"></a>
-### RecordSet を作成
+## RecordSet を作成
 
 ```bash
 aws route53 change-resource-record-sets \
@@ -42,8 +32,7 @@ aws route53 change-resource-record-sets \
 }"
 ```
 
-<a id="markdown-recordset-を削除" name="recordset-を削除"></a>
-### RecordSet を削除
+## RecordSet を削除
 
 ```bash
 aws route53 change-resource-record-sets \
